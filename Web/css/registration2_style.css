@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(../static/images/2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body a { text-decoration: none; color: #000 !important; } 
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(230, 146, 20);
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 30px 10px 20px;
+    font-family: 'Bebas+Neue';
+    font-size: 20px;
+}
+
+.header_container img {
+    width: 50px;
+    height: 50px;
+}
+
+.header_container span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header_container #peak {
+    font-size: 25px;
+    margin-left: -7px;
+}
+
+#logout_icon {
+    width: 25px;
+    height: 25px;
+    padding-top: 8px;
+}
+
+.header_container #logout_a {
+    color: black;
+    padding: 2px 10px 2px;
+    border: 0px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+.header_container #logout_a:hover { background-color: rgb(228, 194, 144); }
+
+/* ARTICLE */
+
+.reg {
+    position: absolute;
+    width: 700px;
+    height: 115%;
+    top: 50%;
+    left: 50%;
+    margin: -190px 0 0 -350px;
+    background-color: rgb(71, 71, 71);
+    opacity: 0.85;
+    border: none;
+    border-radius: 25px;
+}
+
+#reg_form {
+    margin: 10px auto;
+    padding: 40px;
+    padding-right: 60px;
+    width: 80%;
+    padding-bottom: 200px;
+}
+
+#reg_form h1 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: #ffffff
+}
+
+label {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+#error_status {
+    color: #d37575;
+    padding-top: 5px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.button {
+    float: right;
+    padding-top: 20px;
+    margin-right: -20px;
+}
+
+button {
+    background-color: rgb(230, 146, 20);
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover { opacity: 0.8; }
+  
+#prevBtn { background-color: rgb(146, 142, 137); }
+
